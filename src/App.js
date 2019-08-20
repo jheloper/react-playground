@@ -23,8 +23,14 @@ class App extends Component {
         {condition && 'Show me'}
         <div style={style}></div>
         <form>
-          Your name:<br/>
-          <input type="text" name="yourname"/>
+          { /* this is comment in JSX */ }
+          Your name:<br
+          // this is comment in JSX element.
+          /* also this. */
+          />
+          <input type="text" name="yourname"
+          // JSX 내에서는 반드시 태그를 닫아야 함. input, br 요소 등등...
+          />
         </form>
       </div>
     );
