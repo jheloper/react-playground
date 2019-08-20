@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
@@ -16,13 +16,17 @@ class App extends Component {
     }
 
     return (
-      <Fragment>
+      <div className="my-div">
         <h1>Hello React!</h1>
         <h2>{text}</h2>
         {condition ? 'True' : 'False'}
         {condition && 'Show me'}
         <div style={style}></div>
-      </Fragment>
+        <form>
+          Your name:<br/>
+          <input type="text" name="yourname"/>
+        </form>
+      </div>
     );
   }
 }
