@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import MyComponent from './MyComponent';
 
 class App extends Component {
   render() {
@@ -32,6 +33,7 @@ class App extends Component {
           // JSX 내에서는 반드시 태그를 닫아야 함. input, br 요소 등등...
           />
         </form>
+        <MyComponent></MyComponent>
       </div>
     );
   }
