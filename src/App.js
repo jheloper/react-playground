@@ -37,7 +37,9 @@ class App extends Component {
           />
         </form>
         {/* 컴포넌트에 props를 설정할 때에는 아래와 같이 설정한다 */}
-        <MyComponent name="Test Name"></MyComponent>
+        <MyComponent
+          name="Test Name" /* description={1} PropTypes로 string을 지정했기 때문에 렌더링은 되나 오류 메시지 콘솔에 출력 */
+        ></MyComponent>
       </div>
     );
   }
