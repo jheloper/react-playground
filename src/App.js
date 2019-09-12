@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import MyComponent from "./MyComponent";
+import ValidationSample from "./ValidationSample";
 
 class App extends Component {
   render() {
@@ -40,6 +41,7 @@ class App extends Component {
         <MyComponent
           name="Test Name" /* description={1} PropTypes로 string을 지정했기 때문에 렌더링은 되나 오류 메시지 콘솔에 출력 */
         ></MyComponent>
+        <ValidationSample></ValidationSample>
       </div>
     );
   }
