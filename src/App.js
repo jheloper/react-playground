@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import MyComponent from "./MyComponent";
 import ValidationSample from "./ValidationSample";
+import ScrollBox from "./ScrollBox";
 
 class App extends Component {
   render() {
@@ -42,6 +43,18 @@ class App extends Component {
           name="Test Name" /* description={1} PropTypes로 string을 지정했기 때문에 렌더링은 되나 오류 메시지 콘솔에 출력 */
         ></MyComponent>
         <ValidationSample></ValidationSample>
+        <ScrollBox
+          ref={ref => {
+            this.scrollBox = ref;
+          }}
+        ></ScrollBox>
+        <button
+          onClick={() => {
+            this.scrollBox.scrollToBottom();
+          }}
+        >
+          맨 밑으로
+        </button>
       </div>
     );
   }
