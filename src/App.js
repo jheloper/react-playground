@@ -3,6 +3,7 @@ import "./App.css";
 import MyComponent from "./MyComponent";
 import ValidationSample from "./ValidationSample";
 import ScrollBox from "./ScrollBox";
+import IterationSample from "./IterationSample";
 
 class App extends Component {
   render() {
@@ -55,6 +56,7 @@ class App extends Component {
         >
           맨 밑으로
         </button>
+        <IterationSample></IterationSample>
       </div>
     );
   }
