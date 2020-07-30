@@ -24,10 +24,21 @@ class Counter extends Component {
                 <button
                     onClick={() => {
                         // this.setState를 사용하여 state 변경
-                        this.setState({ number: number + 1 });
+                        // this.setState({ number: number + 1 });
+
+                        // setState에 객체 대신 함수를 인자로 전달
+                        this.setState((prevState, props) => {
+                            return {
+                                number: prevState.number + 1,
+                            };
+                        });
+                        // 위 코드와 아래 코드는 같은 기능이지만, 아래 코드는 함수에서 바로 객체를 반환한다는 의미.
+                        this.setState((prevState, props) => ({
+                            number: prevState.number + 1
+                        }));
                     }}
                 >
-                    +1
+                    +2
                 </button>
             </div>
         );
