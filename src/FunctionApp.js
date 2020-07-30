@@ -1,12 +1,14 @@
 import React from "react";
 // import MyFunctionComponent from "./MyFunctionComponent";
-import MyClassComponent from "./MyClassComponent";
+// import MyClassComponent from "./MyClassComponent";
+import Counter from "./Counter";
 
 const App = () => {
     return (
-        <MyClassComponent name="React" favoriteNumber={1}>
-            React
-        </MyClassComponent>
+        // <MyClassComponent name="React" favoriteNumber={1}>
+        //     React
+        // </MyClassComponent>
+        <Counter />
     );
 };
 
