@@ -2,7 +2,7 @@ import React from "react";
 import MyComponent from "./MyFunctionComponent";
 
 const App = () => {
-    return <MyComponent name="React" />;
+    return <MyComponent>React</MyComponent>;
 };
 
 export default App;
