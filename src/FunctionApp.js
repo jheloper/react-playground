@@ -1,11 +1,12 @@
 import React from "react";
-import MyComponent from "./MyFunctionComponent";
+// import MyFunctionComponent from "./MyFunctionComponent";
+import MyClassComponent from "./MyClassComponent";
 
 const App = () => {
     return (
-        <MyComponent name="React" favoriteNumber={1}>
+        <MyClassComponent name="React" favoriteNumber={1}>
             React
-        </MyComponent>
+        </MyClassComponent>
     );
 };
 
