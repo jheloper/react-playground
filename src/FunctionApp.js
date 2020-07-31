@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 // import MyFunctionComponent from "./MyFunctionComponent";
 // import MyClassComponent from "./MyClassComponent";
-import Counter from "./Counter";
-import Say from "./Say";
+// import Counter from "./Counter";
+// import Say from "./Say";
+import EventPractice from "./EventPractice";
 
 const App = () => {
     return (
@@ -10,8 +11,9 @@ const App = () => {
         //     React
         // </MyClassComponent>
         <Fragment>
-            <Counter />
-            <Say />
+            {/* <Counter /> */}
+            {/* <Say /> */}
+            <EventPractice />
         </Fragment>
     );
 };
