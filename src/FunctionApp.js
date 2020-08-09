@@ -3,7 +3,8 @@ import React, { Fragment } from "react";
 // import MyClassComponent from "./MyClassComponent";
 // import Counter from "./Counter";
 // import Say from "./Say";
-import EventPractice from "./EventPractice";
+// import EventPractice from "./EventPractice";
+import EventPractice from "./FunctionEventPractice";
 
 const App = () => {
     return (
